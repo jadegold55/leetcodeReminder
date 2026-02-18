@@ -31,15 +31,15 @@ def send_message(text):
 
 def workday_reminder():
     send_message(
-        ":)*LeetCode – Work Day Check-in*\n\n"
+        "*LeetCode – Work Day Check-in :3*\n\n"
         "Even 1 problem counts today. Pick an easy from your Week list and knock it out.\n\n"
-        ":3 No pressure — just keep the streak alive."
+        "No pressure — just keep the streak alive."
     )
 
 
 def full_session_morning():
     send_message(
-        ":0*LeetCode – Full Session (Before 2PM)*\n\n"
+        "*LeetCode – Full Session (Before 2PM) :3*\n\n"
         "You've got time before 2. Here's the plan:\n"
         "• 45 min → new problem, full process\n"
         "• 30 min → review your solutions + read top answers\n"
@@ -50,7 +50,7 @@ def full_session_morning():
 
 def full_session_evening():
     send_message(
-        ":3*LeetCode – Full Session (After 5PM)*\n\n"
+        "*LeetCode – Full Session (After 5PM) :3*\n\n"
         "Session time! Here's the plan:\n"
         "• 45 min → new problem, full process\n"
         "• 30 min → review your solutions + read top answers\n"
@@ -61,7 +61,7 @@ def full_session_evening():
 
 def weekend_reminder():
     send_message(
-        ":3 *LeetCode – Weekend Session*\n\n"
+        "*LeetCode – Weekend Session :3*\n\n"
         "Afternoon grind time. Aim for 2-3 problems today.\n"
         "Try at least one Medium and review anything shaky from the week.\n\n"
         "Consistency > intensity 🔥"
@@ -96,7 +96,7 @@ if __name__ == "__main__":
     send_message(
         "🤖 *LeetCode Reminder Bot is live!*\n\nYou'll get reminders based on your study schedule. Good luck this week Jade 💪"
     )
-    schedule.every(1).minutes.do(workday_reminder)
+
     while True:
         schedule.run_pending()
         time.sleep(30)
