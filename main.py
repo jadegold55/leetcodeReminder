@@ -96,7 +96,7 @@ if __name__ == "__main__":
     send_message(
         "🤖 *LeetCode Reminder Bot is live!*\n\nYou'll get reminders based on your study schedule. Good luck this week Jade 💪"
     )
-
+    schedule.every(1).minutes.do(workday_reminder)
     while True:
         schedule.run_pending()
         time.sleep(30)
